@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { Container, Box, Heading } from "@chakra-ui/react";
 
 const Page = () => {

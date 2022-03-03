@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-key */
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "../components/layouts/main";
-
+import Theme from "../libs/theme";
 const Website = ({
   Component,
   pageProps,
@@ -11,7 +12,7 @@ const Website = ({
   router: any;
 }) => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={Theme}>
       <Layout router={router}>
         <Component {...pageProps} key={router.route} />
       </Layout>
